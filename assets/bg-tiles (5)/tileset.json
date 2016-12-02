@@ -6,7 +6,7 @@
   },
   "tileProperties": {
     "1_0": {
-      "property": ""
+      "collision": "true"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "behaviors": {
-    "PlayerMovement2dbehavior": {
-      "scriptId": "6",
+    "PlayermovementBehavior": {
+      "scriptId": "3",
       "line": 0,
       "parentBehavior": null,
       "properties": [
@@ -12,19 +12,7 @@
       ]
     },
     "CameraFollowPlayer": {
-      "scriptId": "8",
-      "line": 0,
-      "parentBehavior": null,
-      "properties": []
-    },
-    "PlayerAnimationbehavior": {
-      "scriptId": "10",
-      "line": 0,
-      "parentBehavior": null,
-      "properties": []
-    },
-    "RenderFPS": {
-      "scriptId": "11",
+      "scriptId": "7",
       "line": 0,
       "parentBehavior": null,
       "properties": []

@@ -1,65 +1,42 @@
 {
-  "nextEntryId": 15,
+  "nextEntryId": 8,
   "nodes": [
     {
+      "id": "7",
+      "name": "camera-follow-player",
+      "type": "script"
+    },
+    {
       "id": "0",
-      "name": "moonbear",
-      "type": "sprite"
-    },
-    {
-      "id": "9",
-      "name": "moonbear-action",
-      "type": "sprite"
-    },
-    {
-      "id": "6",
-      "name": "PlayerMovement2d",
-      "type": "script"
-    },
-    {
-      "id": "10",
-      "name": "PlayerAnimation",
-      "type": "script"
-    },
-    {
-      "id": "8",
-      "name": "Camera Follow Player",
-      "type": "script"
-    },
-    {
-      "id": "11",
-      "name": "RenderFPS",
-      "type": "script"
-    },
-    {
-      "id": "2",
-      "name": "Game",
-      "type": "script"
-    },
-    {
-      "id": "3",
       "name": "Main Scene",
       "type": "scene"
     },
     {
-      "id": "12",
-      "name": "Font",
-      "type": "font"
-    },
-    {
-      "id": "13",
-      "name": "dumb tree",
-      "type": "sprite"
-    },
-    {
-      "id": "1",
-      "name": "Tile Set",
+      "id": "5",
+      "name": "bg-tiles",
       "type": "tileSet"
     },
     {
-      "id": "7",
-      "name": "Tile Map",
+      "id": "6",
+      "name": "bg-map",
       "type": "tileMap"
+    },
+    {
+      "id": "3",
+      "name": "player-movement",
+      "type": "script"
+    },
+    {
+      "id": "1",
+      "name": "Images",
+      "type": null,
+      "children": [
+        {
+          "id": "4",
+          "name": "moonbear",
+          "type": "sprite"
+        }
+      ]
     }
   ]
 }
