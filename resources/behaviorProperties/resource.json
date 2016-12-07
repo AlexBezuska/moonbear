@@ -2,7 +2,7 @@
   "behaviors": {
     "PlayermovementBehavior": {
       "scriptId": "3",
-      "line": 0,
+      "line": 2,
       "parentBehavior": null,
       "properties": [
         {
@@ -13,6 +13,74 @@
     },
     "CameraFollowPlayer": {
       "scriptId": "7",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "FixdraworderBehavior": {
+      "scriptId": "8",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ScatterTrees": {
+      "scriptId": "12",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "treeCount",
+          "type": "number"
+        }
+      ]
+    },
+    "DialoguesystemBehavior": {
+      "scriptId": "15",
+      "line": 97,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "selectedOption",
+          "type": "number"
+        }
+      ]
+    },
+    "ProximityMessage": {
+      "scriptId": "20",
+      "line": 19,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "radius",
+          "type": "number"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        },
+        {
+          "name": "continueArrow",
+          "type": "boolean"
+        },
+        {
+          "name": "inChat",
+          "type": "boolean"
+        }
+      ]
+    },
+    "ScatterApples": {
+      "scriptId": "28",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "appleCount",
+          "type": "number"
+        }
+      ]
+    },
+    "HandlecollisionsBehavior": {
+      "scriptId": "30",
       "line": 0,
       "parentBehavior": null,
       "properties": []

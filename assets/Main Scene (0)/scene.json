@@ -53,12 +53,28 @@
             "propertyValues": {}
           },
           "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixdraworderBehavior",
+            "propertyValues": {}
+          },
+          "id": "3"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "HandlecollisionsBehavior",
+            "propertyValues": {}
+          },
+          "id": "4"
         }
       ],
       "position": {
-        "x": 0,
-        "y": 0,
-        "z": 1.1
+        "x": 9.923577308654785,
+        "y": 11.108745574951172,
+        "z": 1.100000023841858
       },
       "orientation": {
         "x": 0,
@@ -109,9 +125,359 @@
         }
       ],
       "position": {
-        "x": -0.04422172158956528,
-        "y": 0,
+        "x": 6.40365743637085,
+        "y": -5.645608425140381,
         "z": 2
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "UI Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "formatVersion": 1,
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 2.8,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 100
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 90000,
+        "y": -5.646,
+        "z": 90002
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "6",
+      "name": "dialogueBox",
+      "children": [
+        {
+          "id": "7",
+          "name": "dialogueBoxText",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "18",
+                "text": "Text",
+                "alignment": "left",
+                "verticalAlignment": "top",
+                "size": 17,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1.4609375,
+            "y": 0.33540773391723633,
+            "z": 0.1015625
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "10",
+          "name": "option0",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "18",
+                "text": "option0",
+                "alignment": "center",
+                "verticalAlignment": "top",
+                "size": 17,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -0.766,
+            "y": -0.091,
+            "z": 0.1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "11",
+          "name": "option1",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "18",
+                "text": "option1\n",
+                "alignment": "center",
+                "verticalAlignment": "top",
+                "size": 17,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.727,
+            "y": -0.091,
+            "z": 0.1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "12",
+          "name": "close",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "18",
+                "text": "close",
+                "alignment": "center",
+                "verticalAlignment": "top",
+                "size": 12,
+                "color": null,
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.3125,
+            "y": -0.1582183837890625,
+            "z": 0.1015625
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "8",
+          "name": "continueArrow",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "19",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1.3671875,
+            "y": -0.18306303024291992,
+            "z": 0.1015625
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "9",
+          "name": "avatar",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "21",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1.1484375,
+            "y": 0.5750536918640137,
+            "z": 0.1015625
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "16",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": true,
+            "opacity": 0.9,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "DialoguesystemBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 89999.96875,
+        "y": -6.546745777130127,
+        "z": 90000
       },
       "orientation": {
         "x": 0,
@@ -167,12 +533,157 @@
             "layersIndex": null
           },
           "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ScatterTrees",
+            "propertyValues": {
+              "treeCount": {
+                "type": "number",
+                "value": 80
+              }
+            }
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ScatterApples",
+            "propertyValues": {}
+          },
+          "id": "3"
         }
       ],
       "position": {
-        "x": -11.593,
-        "y": -11.223,
-        "z": 0.1
+        "x": 0,
+        "y": 0,
+        "z": -50
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "treeArea",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 9.923577308654785,
+        "y": -7.0012969970703125,
+        "z": 11.100000381469727
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "4",
+      "name": "Owl",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "14",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ProximityMessage",
+            "propertyValues": {
+              "radius": {
+                "type": "number",
+                "value": 0.4
+              },
+              "other": {
+                "type": "any",
+                "value": null
+              },
+              "message": {
+                "type": "string",
+                "value": "owl-greeting"
+              },
+              "continueArrow": {
+                "type": "boolean",
+                "value": true
+              }
+            }
+          },
+          "id": "1"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "formatVersion": 2,
+            "type": "box",
+            "movable": true,
+            "width": 0.18,
+            "height": 0.05,
+            "offset": {
+              "x": 0.02,
+              "y": -0.17
+            },
+            "bounce": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "FixdraworderBehavior",
+            "propertyValues": {}
+          },
+          "id": "3"
+        }
+      ],
+      "position": {
+        "x": 8.254921913146973,
+        "y": 8.563713073730469,
+        "z": 1.100000023841858
       },
       "orientation": {
         "x": 0,
